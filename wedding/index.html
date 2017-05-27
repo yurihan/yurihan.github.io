@@ -98,13 +98,12 @@
     </div>
     <div class="section" id="section3">
         <div class="intro">
-            <h1>Working On Tablets</h1>
+            <h1>블라블라블라</h1>
             <p>
-                Designed to fit different screen sizes as well as tablet and mobile devices.
+                기타 내용. 계좌번호 등.
                 <br /><br /><br /><br /><br /><br />
             </p>
         </div>
-        <img data-src="imgs/tablets.png" alt="tablets" height="372" width="843" />
     </div>
 </div>
 
@@ -119,30 +118,15 @@
             css3: true,
             scrollingSpeed: 1000
         });
+        $('.slide').on('click',function(){
+        	var bg = $(this).css('background-image').replace(/(url\(|\)|")/g, '');
+        	window.open(bg, '_blank');
+        });
 
-        // $('#showExamples').click(function(e){
-        //     e.stopPropagation();
-        //     e.preventDefault();
-        //     $('#examplesList').toggle();
-        // });
-
-        // $('html').click(function(){
-        //     $('#examplesList').hide();
-        // });
     });
 </script>
 
-<!-- * Daum 지도 - 지도퍼가기 -->
-<!-- 1. 지도 노드 -->
-
-
-<!--
-	2. 설치 스크립트
-	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
--->
 <script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
-
-<!-- 3. 실행 스크립트 -->
 <script charset="UTF-8">
 	new daum.roughmap.Lander({
 		"timestamp" : "1495888776757",
