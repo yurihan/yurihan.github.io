@@ -14,6 +14,12 @@ comments: false
 About me
 ========
 
+{% capture images %}
+    /assets/img/about/my1.jpg
+    /assets/img/about/my2.jpg
+{% endcapture %}
+{% include gallery images=images caption="My photos" cols=2 %}
+
 Name
 ----
 * 최현석(崔賢碩)
