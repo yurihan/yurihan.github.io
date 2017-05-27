@@ -120,15 +120,15 @@
             scrollingSpeed: 1000
         });
 
-        $('#showExamples').click(function(e){
-            e.stopPropagation();
-            e.preventDefault();
-            $('#examplesList').toggle();
-        });
+        // $('#showExamples').click(function(e){
+        //     e.stopPropagation();
+        //     e.preventDefault();
+        //     $('#examplesList').toggle();
+        // });
 
-        $('html').click(function(){
-            $('#examplesList').hide();
-        });
+        // $('html').click(function(){
+        //     $('#examplesList').hide();
+        // });
     });
 </script>
 
@@ -152,7 +152,7 @@
 	});
 	map.render();
 	//map.setZoomable(false);
-	setTimeout(1000,function(){daum.roughmap.instances[1495888776757].jsMap.setZoomable(false);})
+	setTimeout(function(){daum.roughmap.instances[1495888776757].jsMap.setZoomable(false);},1000)
 	//
 </script>
 
