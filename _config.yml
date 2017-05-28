@@ -25,19 +25,21 @@ sass:
   sass_dir:         _sass
   style:            compressed
 
+permalink:     date
+
 # Comments
 disqus_shortname:   yurihans-dreamfactory
 
 # Social
 # if you don't have any of social below, comment the line.
-#google:
+google:
   #plus:            #username
-  #analytics:
+  analytics: UA-100009036-1
   #verify:
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
+email: yurihan@yurihan.net
 #twitter:            username
 facebook:           hyunseok.choi.98
 github-url:         yurihan

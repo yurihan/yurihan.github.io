@@ -1,6 +1,6 @@
 ---
-layout: knowledge
-title: 잡학다식
+layout: project
+title: All Projects
 excerpt: "A List of Projects"
 comments: false
 ---

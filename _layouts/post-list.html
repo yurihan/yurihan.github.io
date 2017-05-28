@@ -17,22 +17,39 @@ layout: compress
             <div class="content">
                 <div class="post-title">
                     <h1>{{ page.title }}</h1>
+                    {% if page.category != null %}
+                        <p>{{ page.excerpt }}</p>
+                    {% endif %}
                     <a class="btn zoombtn" href="{{site.url}}">
                         <i class="fa fa-home"></i>
                     </a>
                 </div>
                 <div class="post-list">
-                    {% for post in site.posts %} 
-                        {% if post.knowledge == null %}
-                    <ul>
-                        <li class="wow fadeInLeft" data-wow-duration="1.5s">
-                            <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                            <p>{{ post.excerpt }}</p>
-                            <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
-                        </li>
-                    </ul>
-                        {% endif %}
-                    {% endfor %}
+                    {% if page.category != null %}
+                        {% for post in site.posts %}
+                            {% if post.category == page.category %}
+                            <ul>
+                                <li class="wow fadeInLeft" data-wow-duration="1.5s">
+                                    <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                                    <p>{{ post.excerpt }}</p>
+                                    <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">더 보기</a>
+                                </li>
+                            </ul>
+                            {% endif %}
+                        {% endfor %}
+                    {% else %}
+                        {% for post in site.posts %}
+                            {% if post.project == null %}
+                                <ul>
+                                    <li class="wow fadeInLeft" data-wow-duration="1.5s">
+                                        <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                                        <p>{{ post.excerpt }}</p>
+                                        <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">더 보기</a>
+                                    </li>
+                                </ul>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
                 </div>
             </div>
         </div>
