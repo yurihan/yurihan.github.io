@@ -108,15 +108,14 @@
                 <h1 style="color:#ffffff; text-shadow: 2px 2px 4px #dddddd;">Gallary</h1>
             </div>
             <div id="my-gallery" style="width: 100%; position: center center;">
-                        <a onclick="showPhoto(0)">
-                        <img src="/assets/img/wedding/photo1.jpg"/>
-                        </a>
-                            <a onclick="showPhoto(1)"><img src="/assets/img/wedding/photo2.jpg"/></a>    
-                            <a onclick="showPhoto(2)"><img src="/assets/img/wedding/photo3.jpg"/></a>
-                            <a onclick="showPhoto(3)"><img src="/assets/img/wedding/photo4.jpg"/></a>
-                            <a onclick="showPhoto(4)"><img src="/assets/img/wedding/photo5.jpg"/></a>
-                            <a onclick="showPhoto(5)"><img src="/assets/img/wedding/photo5.jpg"/></a>
-                        
+                <a onclick="showPhoto(0)"><img src="/assets/img/wedding/title.jpg"/></a>
+                <a onclick="showPhoto(1)"><img src="/assets/img/wedding/photo1.jpg"/></a>
+                <a onclick="showPhoto(2)"><img src="/assets/img/wedding/photo2.jpg"/></a>    
+                <a onclick="showPhoto(3)"><img src="/assets/img/wedding/photo3.jpg"/></a>
+                <a onclick="showPhoto(4)"><img src="/assets/img/wedding/photo4.jpg"/></a>
+                <a onclick="showPhoto(5)"><img src="/assets/img/wedding/photo5.jpg"/></a>
+                <a onclick="showPhoto(6)"><img src="/assets/img/wedding/photo6.jpg"/></a>
+                <a onclick="showPhoto(7)"><img src="/assets/img/wedding/photo7.jpg"/></a>
             </div>
         </div>
     </div>
@@ -144,9 +143,10 @@
         $('#fullpage').fullpage({
             sectionsColor: ['#fff', '#333333', '#fff', '#fff', '#fff'],
             anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-            menu: '#menu',
+            //menu: '#menu',
             css3: true,
-            scrollingSpeed: 1000
+            autoScrolling:false
+            //scrollingSpeed: 1000
         });
         $('.slide').on('click',function(){
         	var bg = $(this).css('background-image').replace(/(url\(|\)|")/g, '');
@@ -236,12 +236,14 @@
 <script type="text/javascript">
 
 var photos = [
-{src: "/assets/img/wedding/photo1.jpg",w:1920, h:1320},
-{src: "/assets/img/wedding/photo2.jpg",w:1920, h:1320},
-{src: "/assets/img/wedding/photo3.jpg",w:1920, h:1320},
-{src: "/assets/img/wedding/photo4.jpg",w:1920, h:1320},
-{src: "/assets/img/wedding/photo5.jpg",w:1920, h:1320},
-{src: "/assets/img/wedding/photo5.jpg",w:1920, h:1320}
+{src: "/assets/img/wedding/title.jpg",w:1549, h:1400},
+{src: "/assets/img/wedding/photo1.jpg",w:1920, h:1280},
+{src: "/assets/img/wedding/photo2.jpg",w:1920, h:1371},
+{src: "/assets/img/wedding/photo3.jpg",w:1920, h:1280},
+{src: "/assets/img/wedding/photo4.jpg",w:1920, h:1371},
+{src: "/assets/img/wedding/photo5.jpg",w:1920, h:1371},
+{src: "/assets/img/wedding/photo6.jpg",w:1371, h:1920},
+{src: "/assets/img/wedding/photo7.jpg",w:1371, h:1920}
 ]
 
 function showPhoto(idx)
