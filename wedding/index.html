@@ -66,9 +66,9 @@
         #photo4 { background-image: url(/assets/img/wedding/photo4.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; }
         #photo5 { background-image: url(/assets/img/wedding/photo5.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; }*/
         
-         a:link { color: #dddddd; text-decoration: none;}
-         a:visited { color: #dddddd; text-decoration: none;}
-         a:hover { color: #dddddd; text-decoration: none;}
+         a:link { color: #000; text-decoration: underline;}
+         a:visited { color: #000; text-decoration: none;}
+         a:hover { color: #000; text-decoration: none;}
 
 
     </style>
@@ -109,7 +109,8 @@
     </div>
     <div class="section" id="section1">
         <!-- <div class="intro"> -->
-            <p style="color:#000;font-size: 11pt">
+        <div style="position: absolute; top: 5%; width:100%;">
+            <p style="color:#000;font-size: 11pt; text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;">
                 예전, 아주 작은 인연이 저희를 연인으로 만들었고 </br>
                 오늘, 그 인연으로 저희가 하나가 됩니다.</br>
                 작은 사랑으로 하나의 커다란 열매를 맺고 </br>
@@ -117,14 +118,13 @@
                 오셔서 지켜봐 주시고 축하해 주십시오.</br>
                 늘 그 인연을 생각하며 살겠습니다.
             </p>
-            </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-            </br></br></br></br></br></br></br></br>
+            </div>
         <!-- </div> -->
     </div>
     <div class="section" id="section2">
         <div itemscope itemtype="http://schema.org/ImageGallery">
             <div style="position: absolute; top: 5%; width:100%;">
-                </br><h1 style="color:#dddddd; text-shadow: 2px 2px 4px #dddddd;">Gallery</h1>
+                </br><h1 style="color:#000; text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;">Gallery</h1>
             </div>
             <div id="my-gallery" style="width: 100%; position: absolute; top: 30%;">
                 <a onclick="showPhoto(0)"><img src="/assets/img/wedding/photo0.jpg"/></a>
@@ -140,16 +140,18 @@
     </div>
     <div class="section" id="section3">
         <div style="position: absolute; top: 5%; width:100%;">
-            <h1 style="color:#dddddd; text-shadow: 2px 2px 4px #dddddd;">Location</h1>
-            <p style="color:#dddddd; text-shadow: 1px 1px 2px #dddddd; font-size: 11pt">
-            </br>
+            <h1 style="color:#000;">Location</h1>
+            <p style="color:#000; font-size: 13pt">
+            </br></br>
             <a href="http://map.daum.net/?urlX=501646.0&urlY=1049319.0&itemId=12643620&q=%EA%B2%BD%EA%B8%B0%EA%B5%90%EC%B4%9D%EC%9B%A8%EB%94%A9%ED%95%98%EC%9A%B0%EC%8A%A4&srcid=12643620&map_type=TYPE_MAP&from=roughmap" target="_blank">
             수원 경기교총웨딩하우스</br>
             경기도 수원시 팔달구 고등동 팔달산로 89-13</a>
             </p>
         </div>
-        <div id="section3_map" style="position: absolute; top: 24%; width:80%; margin: auto;">
-            <div id="daumRoughmapContainer1495888776757" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+        <div style="position: absolute; top: 40%; margin-left: 10%; ">
+            <div id="section3_map">
+                <div id="daumRoughmapContainer1495888776757" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+            </div>
         </div>
     </div>
 </div>
@@ -162,7 +164,7 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $('#fullpage').fullpage({
-            sectionsColor: ['#fff', '#fff', '#fff', '#222222'],
+            sectionsColor: ['#fff', '#fff', '#fff', '#fff'],
             anchors: ['title', 'message', 'gallery', 'map'],
             //menu: '#menu',
             css3: true,
@@ -186,8 +188,8 @@
 		"key" : "hvau",
         // "timestamp" : "1504280853520",
         // "key" : "jfra",
-		"mapWidth" : $("#section3").width(),
-		"mapHeight" : $("#section3").height()*0.76 - 33
+		"mapWidth" : $("#section3").width()*0.8,
+		"mapHeight" : $("#section3").height()*0.5 - 33
 	}).render();
 	// setTimeout(function(){
 	// 	daum.roughmap.instances[1495888776757].jsMap.setZoomable(false);
