@@ -13,22 +13,18 @@ comments: false
 
 About me
 ========
-
+<!-- 
 {% capture images %}
     /assets/img/about/my1.jpg
     /assets/img/about/my2.jpg
 {% endcapture %}
 {% include gallery images=images caption="My photos" cols=2 %}
+ -->
 
 Name
 ----
 * 최현석(崔賢碩)
 * Choi Hyun-Seok
-
-Birth
------
-1984-02-11
-
 
 Career
 ======
@@ -47,40 +43,40 @@ Programming Languages
 Work experience
 ---------------
 
+### Grab (Seoul office)
+* 2020 ~
+* Lead Engineer
+	* Grab Driver App
+		* InApp Navigation (iOS)
+
+### Coupang
+* 2018 ~ 2020
+* Sr. Software Development Engineer
+	* Delivery Flex application (iOS)
+
 ### MYLO Company
-* 2017 ~
-* iOS Developer
-	* Swift
-	* Realm / RxSwift
+* 2017 ~ 2018
+* Lead iOS Developer
+	* MYLO O2O Service App (iOS)
 
 ### Freerancer
 * 2015 ~ 2016
 * iOS Developer
-	* Swift
-	* Realm / RxSwift
 
 ### PinkFactory
 * 2014 ~ 2015
 * CTO / Mobile Game Developer
-	* Objective-C / Swift
-	* Java
-	* Python
-	* Lua (Corona SDK)
 
 ### OPENmate
 * 2011 ~ 2014
-* iOS Developer
-	* Objective-C
-* GIS Developer
-	* Java / Python / C# / JavaScript
-	* Oracle
+* iOS Developer / GIS Engineer
+	* Objective-C / Java / Python / C# / JavaScript
 
 ### Mappers
 * 2008 ~ 2010
-* GIS Developer
-	* C++ / C#
-	* Oracle
-
+* GIS Engineer
+	* GPS Navigation
+	
 ### Extronics
 * 2007 ~ 2008
 * Embeded software Developer
@@ -90,29 +86,28 @@ Work experience
 Education
 ---------
 ### 한국방송통신대학교 ( Korea National Open University )
-* 2009 ~ 2017
-* 컴퓨터과학과 (Computer science)
-	* 졸업 예정
+* 2009 ~ 2018
+* Bachelor of Computer Science
+
 
 
 ### 순천향대학교 ( Soon chun hyang University )
 * 2002 ~ 2006
-* 정보기술공학부 컴퓨터 전공
-	* 중퇴
+* Computer Science
 
 
 Resume
 ======
-[이력서](https://www.visualcv.com/zxh62r2ujr4){: .btn .btn-success target="_blank"}
+[Resume(한글)](/assets/resume/resume_kr.pdf){: .btn .btn-success target="_blank"}
+[Resume(English)](/assets/resume/resume_en.pdf){: .btn .btn-success target="_blank"}
 [이력/경력사항](http://bit.ly/13vnWAP){: .btn .btn-info target="_blank"}
 
 Social
 ======
-
 * [Facebook](https://www.facebook.com/hyunseok.choi.98){:target="_blank"}
 * [GitHub](https://github.com/yurihan){:target="_blank"}
 * [GitLab](https://gitlab.com/yurihan){:target="_blank"}
 
-Contect
+Contact
 =======
 [yurihan@yurihan.net](mailto:yurihan@yurihan.net)
