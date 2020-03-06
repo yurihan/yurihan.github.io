@@ -1,7 +1,7 @@
 ---
 title: Let’s Encrypt SSL Cert 설정
 layout: post
-date: 2017-05-28
+date: 2020-03-06
 excerpt: "Let’s Encrypt SSL Cert 설정 (with nginx) on Ubuntu 18.04 / 19.10"
 comments: true
 tag:
