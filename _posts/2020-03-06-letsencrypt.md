@@ -24,7 +24,7 @@ Let’s Encrypt SSL Cert 설정 (with nginx) on Ubuntu 18.04 / 19.10
 ### nginx / letsencrypt / certbot nginx plugin 설치
 
 ```
-$ sudo apt install letsencrypt python-certbot-nginx
+$ sudo apt install nginx letsencrypt python-certbot-nginx
 ```
 
 인증서 발급
@@ -166,4 +166,3 @@ IMPORTANT NOTES:
  ```
 
  진짜 끝!
- 
