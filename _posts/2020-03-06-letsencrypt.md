@@ -167,7 +167,7 @@ IMPORTANT NOTES:
    making regular backups of this folder is ideal.
  ```
  
-혹시나 잘 안되면 아래와 같이 crontab 에 등록하는 방법도 있겠죠.
+혹시나 석달 뒤, 갱신이 제대로 이루어지지 않았다면 아래와 같이 crontab 에 등록하는 방법도 있겠죠.
 
 ```
 10 5 * * 1 /usr/bin/certbot renew >> /var/log/certbot-renew.log
