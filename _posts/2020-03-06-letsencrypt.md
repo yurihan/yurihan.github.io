@@ -123,7 +123,9 @@ IMPORTANT NOTES:
 ```
 
 ### 자동 갱신 설정
-하지만 중요한 작업이 남았죠. 인증서가 만료되기 전에 자동으로 갱신이 되도록 등록을 해줘야 합니다.
+하지만 중요한 작업이 남았죠. 인증서가 만료되기 전에 자동으로 갱신이 되도록 등록을 해줘야 합니다만, 참고한 문서에서는 자동으로 갱신이 된다고 합니다.
+
+일단 **--dry-run** 옵션으로 renew 테스트를 해볼 수 있습니다.
 ```
 $ sudo certbot renew --dry-run
 
@@ -164,5 +166,12 @@ IMPORTANT NOTES:
    also contain certificates and private keys obtained by Certbot so
    making regular backups of this folder is ideal.
  ```
+ 
+혹시나 잘 안되면 아래와 같이 crontab 에 등록하는 방법도 있겠죠.
+
+```
+10 5 * * 1 /usr/bin/certbot renew >> /var/log/certbot-renew.log
+15 5 * * 1 /usr/sbin/service nginx reload
+```
 
  진짜 끝!
