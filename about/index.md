@@ -43,10 +43,11 @@ Programming Languages
 Work experience
 ---------------
 
-### Grab (Seoul office)
+### Grab (Grab Geo JV - Seoul office)
 * 2020 ~
-* Lead Engineer
+* Mobile Developer
 	* Grab Driver App
+		* InApp Maps (iOS)
 		* InApp Navigation (iOS)
 
 ### Coupang
